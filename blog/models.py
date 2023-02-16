@@ -21,6 +21,8 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.value
+    class Meta:
+        ordering = ["value"]
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
