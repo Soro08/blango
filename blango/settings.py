@@ -61,7 +61,8 @@ class Dev(Configuration):
         "rest_framework",
         "rest_framework.authtoken",
         "drf_yasg",
-        "django_filters"
+        "django_filters",
+        "versatileimagefield"
 
     ]
 
@@ -155,6 +156,8 @@ class Dev(Configuration):
     # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
     STATIC_URL = '/static/'
+    MEDIA_ROOT = BASE_DIR / "media"
+    MEDIA_URL = "/media/"
 
     # Default primary key field type
     # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
