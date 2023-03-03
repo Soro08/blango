@@ -12,6 +12,9 @@
         </div>
     </div>
 
+    <script>
+        const postListUrl = '{{ post_list_url|escapejs }}'
+    </script>
     <script type="text/babel" src="{% static 'blog/blog.js' %}"></script>
 
 {% endblock %}
